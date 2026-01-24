@@ -37,3 +37,44 @@ Our pipeline includes a comparative study where LLM outputs are audited against 
     └── recall_rate.pdf         # Plot of top-3/5 topic recall rate from LLM and expert selected topics
 ```
 
+## Reproduction Instructions
+
+To reproduce the results presented in the paper, please follow the modular pipeline in numerical order. Each notebook contains specific local directions, data requirements, and configuration steps necessary for that phase of the audit.
+
+1. **Navigate** to the `__src/` directory.
+2. **Execute** the modules in order (`mod1` through `mod5`).
+3. **Follow** the specific directions provided at each step within the notebooks to ensure data persistence and correct file pathing.
+
+---
+
+## Setup
+
+### Environment
+This project uses Python 3.11.5+. Dependencies can be installed via:
+
+```bash
+pip install -r requirements.txt
+```
+
+### System Dependency: ffmpeg
+
+The `whisper` model used in **mod2** requires `ffmpeg` to be installed on your system's operating system (it cannot be installed via `pip`). 
+
+* **On macOS:**
+  ```bash
+  brew install ffmpeg
+  ```
+* **On Ubuntu/Linux:**
+  ```bash
+  sudo apt update && sudo apt install ffmpeg
+  ```
+
+### Requirements
+* **API Keys:** Access to OpenAI, Anthropic, and Google Gemini APIs is required. These should be stored in a local `.env` file, under the names `CLAUDE_KEY`, `GEMINI_KEY`, and `OPENAI_KEY` respectively.
+* **Data:** Ensure the `___input/` directory is populated with the necessary raw files as described in the directory structure.
+
+---
+
+<!-- ## Citation
+
+If using this code or dataset for your research, please cite our CHI 2026 HEAL Workshop paper: -->

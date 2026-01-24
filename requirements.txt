@@ -1,0 +1,25 @@
+# --- Data Processing & Utilities ---
+pandas
+pdfplumber
+regex
+pathlib
+requests
+
+# --- Web Scraping & Automation ---
+beautifulsoup4
+selenium
+
+# --- AI & Large Language Models ---
+openai-whisper
+openai
+anthropic
+google-generativeai
+
+# --- NLP & Text Processing ---
+deepmultilingualpunctuation
+
+# --- Statistics & Ranking ---
+trueskill
+
+# --- Visualization ---
+matplotlib
