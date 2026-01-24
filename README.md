@@ -77,4 +77,10 @@ The `whisper` model used in **mod2** requires `ffmpeg` to be installed on your s
 
 <!-- ## Citation
 
-If using this code or dataset for your research, please cite our CHI 2026 HEAL Workshop paper: -->
+If using this code or dataset for your research, please cite our CHI 2026 HEAL Workshop paper:
+
+--- -->
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
